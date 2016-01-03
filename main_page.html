@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/countdown.css">
+		<link rel="stylesheet" href="css/style_common.css" />
+		<link rel="stylesheet" href="css/style4.css" />
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/camera.js"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script>
+			$(document).ready(function(){
+				jQuery('#camera_wrap').camera({
+					loader: false,
+					pagination: false ,
+					minHeight: '444',
+					thumbnails: false,
+					height: '27.86458333333333%',
+					caption: true,
+					navigation: true,
+					fx: 'simpleFade'
+				});
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+<!--==============================header=================================-->
+			<header>
+				<div class="container_12">
+					<div class="grid_12">
+						<!-- <div class="socials">
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-google-plus"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div> -->
+						<!-- <h1>
+							<a href="index.html">
+								<img src="images/logo.png" alt="Your Happy Family">
+							</a>
+						</h1> -->
+<!-- 
+						<h1>
+							Fitness Social Platform
+						</h1> -->
+						<form action = "fitbarlogin.php" method = "POST">
+							
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<!-- <li class="current"><a href="main page.html">Home</a></li> -->
+									<li class="current"><a href="main_page.html">Home</a></li>
+									<li><a href="About_our_platform.html">About Our Platform</a></li>
+									<!-- <li><a href="index-2.html">Daily Sports</a></li> -->
+									<li><a href="Friends.html">Friends</a></li>
+
+								<form action="fitbarlogin.php" method="POST" >
+									<li><input type="text" tabindex="1"  id="email" placeholder="Email or Phone" name="email" class="inputtext radius1" value="" required></li>
+									<li><input type="password" tabindex="2" id="pass" placeholder="Password" name="password" class="inputtext radius1" ></li>
+									<li><input type = "submit" name = "submit" value = "Login"></li>
+								</form>
+
+									<li><a href = "register_form.html" ><input type="button" name ="register" value = "Register"></a></li>
+									
+ 
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					</form>
+					<!-- <li><input type="text" tabindex="1"  id="email" placeholder="Email or Phone" name="email" class="inputtext radius1" value=""></li>
+									<li><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" ></li>
+									<li><input type="submit" class="fbbutton" name="login" value="Login" /></li>
+									<li><label><input id="persist_box" type="checkbox" name="persistent" value="1" checked="1"/><span style="color:#ccc;">Keep me logged in</span></label></li>
+									<li><label><a href="" style="color:#ccc; text-decoration:none">forgot your password?</a></label><li> -->
+
+					<!-- <div id="header-main-right">
+          <div id="header-main-right-nav">
+        <form method="post" action="" id="login_form" name="login_form">
+          <table border="0" style="border:none">
+            <tr>
+              <td ><input type="text" tabindex="1"  id="email" placeholder="Email or Phone" name="email" class="inputtext radius1" value=""></td>
+              <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" ></td>
+              <td ><input type="submit" class="fbbutton" name="login" value="Lin" /></td>
+            </tr>
+            <tr>
+            <td><label><input id="persist_box" type="checkbox" name="persistent" value="1" checked="1"/><span style="color:#ccc;">Keep me logged in</span></label>
+            </td>
+            <td><label><a href="" style="color:#ccc; text-decoration:none">forgot your password?</a></label></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+          </div>
+      </div>
+</div>
+ -->
+
+
+
+					<div class="clear"></div>
+				</div>
+			</header>
+			<div class="slider_wrapper">
+				<div id="camera_wrap" class="">
+					<div data-src="images/slide.jpg">
+						<div class="caption fadeIn">
+							Tracking your daily steps
+						</div>
+					</div>
+					<div data-src="images/slide1.jpg">
+						<div class="caption fadeIn">
+							Analysis your fitness
+						</div>
+					</div>
+					<div data-src="images/slide2.jpg">
+						<div class="caption fadeIn">
+							Keep you fit
+						</div>
+					</div>
+				</div>
+			</div>
+<!--==============================Content=================================-->
+			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 21, 2014!</div>
+				<div class="container_12">
+					<div class="grid_12">
+						<h2 class="center">Connect with friends around you</h2>
+						<div class="count_wrap">
+							<!-- <div id="counter"></div> -->
+							<div class="clear"></div>
+							<!-- <a href="#">Join Us</a> -->
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Fitness Record</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img1.jpg" alt=""><!-- <a href="#">More</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Friends</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img2.jpg" alt=""><!-- <a href="#">More</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Ranking</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img3.jpg" alt=""><!-- <a href="#">More</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_7">
+						<h3>Welcome to Our Fitness Tracking Social Platform</h3>
+						<img src="images/page1_img4.jpg" alt="" class="img_inner fleft">
+						<div class="extra_wrapper">
+							<p>Our platform is a ideal way for you connect with your friends. A personalized fitness program, plus integration with most wearable fitness trackers.</p>
+							<p>Register and log in to get inspiration and recommendation from people just like you who are striving to reach their healthy lifestyle goals!</p>
+							<p>Pick up your exercise habits and connect with your friends now !</p>
+							
+						</div>
+						<div class="clear sep__1"></div>
+						
+					</div>
+					<div class="grid_4 prefix_1">
+						<h3>Latest Event</h3>
+						<div class="news">
+							<!-- <time datetime="2014-01-01">14<span>MAR</span></time> -->
+							<div class="extra_wrapper">
+								<p class="color1"><a href="#">Walking Round </a></p>
+								Walking around with your friends, enjoy beauty of nature.
+							</div>
+						</div>
+						<div class="news">
+							<!-- <time datetime="2014-01-01">28<span>MAR</span></time> -->
+							<div class="extra_wrapper">
+								<p class="color1"><a href="#">Compete with Your friends </a></p>
+								Exercise more to get the 1st ranking, give your "Like" to your friends.
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_12">
+						<div class="hor_separator"></div>
+						<h3 class="head1 center">Our Objectives</h3>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_12">
+						<div id="grid" class="main">
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>110</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>60</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img5.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>208</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>813</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img6.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>51</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>88</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img7.jpg" />
+							</div>
+							<div class="clear"></div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>228</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>62</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img8.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>117</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>368</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img9.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>22</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>38</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img10.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<!-- <footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">Tracking your fitness</a>
+					</div>
+					<div class="f_contacts">
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> MAIL@DEMOLINK.ORG</a>
+						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
+					</div>
+					<div class="copy">
+						<!-- <span>Marathon &copy; 2014 | <a href="#">Privacy Policy</a></span> -->
+						<!-- Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a> -->
+					<!-- </div>
+				</div>
+				<div class="clear"></div>
+			</div> -->
+		<!-- </footer> --> 
+		<div id="footer">
+  		<div class="copyright">
+		<footer>
+			<small>Copyright &copy;  2015 Fitbar. All rights reserved.</small>
+			<link href="register.css" rel="stylesheet">
+		</footer>
+		</div>
+		</div>
+
+
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/cd_config.js"></script>
+		<script src="js/modernizr.custom.69142.js"></script>
+		<script type="text/javascript">
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

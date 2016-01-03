@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>User Registration Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    </head>
+    <body>    
+        <form action="fitbarregister.php" method = "POST" class="register">
+            <h1>User Registration</h1>
+            <br>
+            <fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Email *
+                    </label>
+                    <input type="text" name = "email" id = "email" title = "Enter a valid email address." required pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" />
+                </p>
+
+                <!-- <p>
+                    <label>Repeat email *</label>
+                    <input type="text" id ="rmail"/>
+                </p> -->
+
+                <p>
+                    <label>Password*
+                    </label>
+                    <input type="password" name = "password" id = "password" title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+                </p>
+
+                <p>
+                    <label>Repeat Password*</label>
+                    <input type="password" id = "password2" onchange="validatepassword()" required>
+                    <!-- <label class="obinfo">* required fields </label> -->
+                </p>
+
+                <span id="confirmMessage" class="confirmMessage"></span>
+
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+                <p>
+                    <label>Name *
+                    </label>
+                    <input type="text"  name = "userName" id="userName" title = "First name must be larger than 1 and less than 6 characters containing only a-zA-Z and white space." required pattern="[a-zA-Z].{1,6}"+" " />
+                </p>
+                <p>
+                    <label>Phone *
+                    </label>
+                    <input type="text" name = "phoneNumber" id="phoneNumber"maxlength="10" title = "The phone number should have 8 numbers."required pattern = "(?=.*\d).{8}"/>
+                </p>
+                <!-- <p>
+                    <label class="optional">Street
+                    </label>
+                    <input type="text" class="long"/>
+                </p> -->
+               <!--  <p>
+                    <label>City *
+                    </label>
+                    <input type="text" class="long"/>
+                </p> -->
+                <p>
+                    <label>Country *
+                    </label>
+                    <select required  name="area" id="area">
+                        <option>
+                        </option>
+                        <option value="US">United States
+                        <option value="CHINA">China
+                        <option value="HK">Hong Kong
+                        <option value="Other">Other
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Profile Photo</label>
+                    <input type="file" name = "photoProfile"id = "photoProfile" accept="image/*"/>
+                </p>
+
+                 <p>
+                    <label>Sports Data *</label>
+                    <input type="file" id = "sportData" name = "sportData" accept="text/xml" required/>
+                </p>
+                <br>
+                <br>
+
+                <p>
+                <label class="obinfo">* required </label>
+                <!-- <label>* required fields </label> -->
+                </p>
+                <!-- <p>
+                    <label class="optional">Website
+                    </label>
+                    <input class="long" type="text" value="http://"/>
+
+                </p> -->
+            </fieldset>
+            <fieldset class="row3">
+                <legend>Further Information
+                </legend>
+                <p>
+                    <label>Gender *</label>
+
+                    <input type="radio" value="radio" name ="sex" required/>
+                    <label class="gender">Male</label>
+
+                    <input type="radio" value="radio" name ="sex"/>
+                    <label class="gender">Female</label>
+                   <!--  
+                    <input type="radio" name="sex" value="male" checked>Male
+                    <br>
+                    <input type="radio" name="sex" value="female">Female -->
+                </p>
+
+                 <p>
+                    <label for="Birthday">Birthday *</label>
+                     <input type="date" name="birthday" id ="bday" required>
+                 </p>
+                <!-- <p>
+                    <label>Birthdate *
+                    </label>
+                    <select class="date" required>
+                        <option value="1">01
+                        </option>
+                        <option value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                    <select required>
+                        <option value="1">January
+                        </option>
+                        <option value="2">February
+                        </option>
+                        <option value="3">March
+                        </option>
+                        <option value="4">April
+                        </option>
+                        <option value="5">May
+                        </option>
+                        <option value="6">June
+                        </option>
+                        <option value="7">July
+                        </option>
+                        <option value="8">August
+                        </option>
+                        <option value="9">September
+                        </option>
+                        <option value="10">October
+                        </option>
+                        <option value="11">November
+                        </option>
+                        <option value="12">December
+                        </option>
+                    </select>
+                    <input class="year" type="text" size="4" maxlength="4"/>e.g 1976
+                </p> -->
+                <p>
+                    <label>Social App Type</label>
+                    <select name="id_option" id="id_option"required>
+                        <option value="0"></option>
+                        <option value="wechatid">Wechat</option>
+                        <option value="appleid">Apple</option>
+                       
+                    </select>
+                </p>
+
+                <p>
+                    <label>ID </label>
+                    <input type="text" class="long" name="id" id="id"/>
+                </p>
+
+                <!-- <p>
+                    <label>PolyU Student *
+                    </label>
+                    <input type="checkbox" value="" required/>
+                </p> -->
+                <!-- <div class="infobox"><h4>Helpful Information</h4>
+                    <p>Here comes some explaining text, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div> -->
+            </fieldset>
+            <fieldset class="row4">
+                <legend>Terms
+                </legend>
+                <p class="agreement">
+                    <input type="checkbox" value="" required/>
+                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
+                </p>
+                <!-- <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I want to receive personalized offers by your site</label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>Allow partners to send me personalized offers and related services</label>
+                </p> -->
+            </fieldset>
+
+            <div>
+            <!-- <p> -->
+                <!-- <input type="button" value="Register"> -->
+                <button class="button" onclick="return validatepassword()">Register</button>
+            <!-- </p> -->
+            </div>
+
+        </form>
+
+ <script>
+//         function validatepassword() {
+//         var pass1 = document.getElementById("password1").value;
+//         var pass2 = document.getElementById("password2").value;
+//         var ok = true;
+//     if (pass1 != pass2){
+//         //alert("Passwords Do not match");
+//         document.getElementById("password1").style.borderColor = "#E34234";
+//         document.getElementById("password2").style.borderColor = "#E34234";
+//         document.getElementById("password2").innerHTML = "Passwords do not match."
+//         ok = false;
+//     }
+//     // else {
+//     //     alert("Passwords Match!!!");
+//     // }
+//     return ok;
+// }
+
+function validatepassword()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('password');
+    var pass2 = document.getElementById('password2');
+    //Store the Confimation Message Object ...
+    var message = document.getElementById('confirmMessage');
+    //Set the colors we will be using ...
+    var goodColor = "#ffffff";
+    var badColor = "#ff6666";
+    // var ok = true;
+    //Compare the values in the password field 
+    //and the confirmation field
+    // if(password1.value == password2.value){
+    //     //The passwords match. 
+    //     //Set the color to the good color and inform
+    //     //the user that they have entered the correct password 
+    //     password2.style.backgroundColor = goodColor;
+    //     message.style.color = goodColor;
+    //     message.innerHTML = "Passwords Match!"
+    // }else{
+
+
+       if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        pass2.style.backgroundColor = goodColor;
+        // message.style.color = goodColor;
+        message.innerHTML = ""
+        // return true;
+    }
+
+    else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        // return false;
+        message.innerHTML = "Passwords Do Not Match!"
+    }
+}  
+// </script>
+
+        <div id="footer">
+        <div class="copyright">
+        <footer>
+            <small>Copyright &copy;  2015 Fitbar. All rights reserved.</small>
+            <link href="register.css" rel="stylesheet">
+        </footer>
+        </div>
+        </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,4 +1,11 @@
-# COMP5321-Project--Enterprise-Web-and-Internet-Computing-for-Managers
+# This is an application that built with HTML, Javascript, CSS and PHP.
+
+# The application covers following functionalities.
+
+a) Import the the steps data that extracted from WeChat(through iHealth application in iPhone).
+b) Analyze the data and provide recommendations for the people that have similar exercise habits.
+
+# Steps to execute the program
 
 Step 1
 Download the XAMPP first.  

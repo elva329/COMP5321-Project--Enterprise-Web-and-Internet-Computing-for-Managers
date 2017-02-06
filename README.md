@@ -2,8 +2,8 @@
 
 # The application covers following functionalities.
 
-a) Import the the steps data that extracted from WeChat(through iHealth application in iPhone).
-b) Analyze the data and provide recommendations for the people that have similar exercise habits.
+1. Import the the steps data that extracted from WeChat(through iHealth application in iPhone).
+2. Analyze the data and provide recommendations for the people that have similar exercise habits.
 
 # Steps to execute the program
 

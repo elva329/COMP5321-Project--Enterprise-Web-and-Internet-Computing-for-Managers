@@ -1,4 +1,5 @@
-# This is an application that built with HTML, Javascript, CSS and PHP.
+# FitbarFitnessTrackingSocialPlatform
+This is an application that built with HTML, Javascript, CSS and PHP. It mainly focuses on creating a fitness tracking social platform based on users’ sport data which are stored in their wearable devices or mobile devices that have an auto-senses step counting function. By analysing users' sports data, our application will recommend some friends who have the same physical habit to the user so that they can connect with each other.
 
 # The application covers following functionalities.
 

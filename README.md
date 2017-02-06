@@ -7,14 +7,12 @@
 
 # Steps to execute the program
 
-Step 1
-Download the XAMPP first.  
+1. Clone or download the source code package.
 
-Step 2
-Open the XAMPP local server.
+2. Install XAMPP and start all the server.
 
-Step3
-Open XAMPP MySql local host http://localhost/phpmyadmin/db_import.php?db=fitBar&token=7b8b87609ed386fb6007d74223697178 to import the file (fitbar.sql) to initialize the database
+3. Put the source code package into the htdocs folder of XAMPP.
 
-Step4
-Open link: http://localhost/fitbar/main_page.html to start the surf. 
+4. Import the database script into SQLPro or MySQLWorkbench to create the database.
+
+5. Open your web browser, type localhost/PHP-SimpleChatApplication/index.php
